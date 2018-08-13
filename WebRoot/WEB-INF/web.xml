@@ -7,4 +7,18 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+	   <servlet-name>dwr</servlet-name>
+	   <servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+	   <init-param>
+	    <param-name>debug</param-name>
+	    <param-value>true</param-value>
+	   </init-param>
+	   <load-on-startup>0</load-on-startup>
+	  </servlet>
+	<servlet-mapping>   
+		<servlet-name>dwr</servlet-name>   
+		<url-pattern>/dwr/*</url-pattern>   
+	</servlet-mapping> 
 </web-app>

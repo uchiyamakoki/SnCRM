@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TestDWR</title>
+     <script type="text/javascript" src="dwr/engine.js"></script>
+     <script type="text/javascript" src="dwr/interface/TestDWR.js"></script>
+  	 <script type="text/javascript">
+  	 	function init(){
+  	 		TestDWR.getString(load);
+  	 	}
+  	 	function load(data){
+  	 		alert(data);
+  	 	}
+  	 	
+  	 </script>
+  </head>
+  
+  <body onload="init()">
+  </body>
+</html>
